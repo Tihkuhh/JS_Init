@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM, aula 10</title>
+    <style>
+        div#area {
+            font: normal 20pt arial; /*Muda a fonte/letra da pagina*/
+            background: rgb(46, 143, 46);/*muda o fundo do site por inteiro*/
+            color: white ;/*muda a cor das letras no site*/
+            width: 200px;/*Limita até onde vai o background*/
+            height: 200px;/*22/09/2021: não sei o que muda*/
+            line-height: 200px;/*posição do texto no eixo Y*/
+            text-align: center;/*Deixa o texto exatamente no meio da linha*/
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

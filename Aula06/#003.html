@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vai logo estudar </title> <!--Titulo da aba do navegador-->
+    <style>
+        body{
+            background-color: darkorchid; /* cor do fundo do site*/
+            color: darkblue; /* muda a cor da fonte/letra */
+            font: normal 18pt arial;} /* muda a fonte em si (tamanho, forma, etc.)*/
+        h1{color: greenyellow;}
+    </style>
+</head>
+<body>
+    <h1> estudo </h1>
+    <p>Vai estudar kenga, é muito daora kkkkk</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número, para começar')) // Vai receber o número como uma string.
+        var n2 = Number.parseFloat(window.prompt('Digite só mais um número, por favor')) // mesma coisa de cima.
+        //Number.parseInt ou parseFloat converte as strings em números, sendo int números inteiros e Float números reais.
+        //Para converter string em number, utilizo number(). Para converter number em string, utilizo string() ou n.tostring().
+        var R = n1 + n2
+        window.alert('a soma dos valores ' + n1 + ' e ' + n2 + ' é ' + R + '!') // Nas versões mais novas, existe o placeholder ou ${} para usar as variáreis dentro da strings sem ter que abrir e fechar '' direto, por exemplo, ' Texto ' + variável + ' Texto '
+    </script>
+</html>

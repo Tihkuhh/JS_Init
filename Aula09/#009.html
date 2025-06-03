@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos do DOM</h1>
+    <p>TESTE DO PRIMEIRO PARAGRÁFO</p>
+    <P>TESTE DO segudno paragráfo</P>
+    <div id="fff">div de teste</div>
+    <script>
+        /*
+        document.write(window.navigator.appName) diz o nome do navegador
+        var p1 = document.getElementsByTagName('p')[0] //Diz que a variável p1 é agora a frase do primeiro paragráfo
+        var h1 = document.getElementByTagName('h1')//Diz que a variável h1 recebe o título do texto
+        document.write(p1.innerText) //Mostra na tela a variável p1
+        p1.style.color = 'white' // Muda a cor da var p1
+        p1.style.background = 'black' // muda a cor do fundo da var p1
+        var d = document.getElementById ('fff')// DEFINIDO O ID DE DIV LA EM CIMA, essa linha faz a variável d receber a div
+        window.document.getElementById('fff').innerText = 'olá' //troca o div por olá
+        */
+       //ESSA É UMA FORMA NOVA DE FAZER AS MESMAS COISAS, SENDO RECOMENDADA
+       var opa = window.document.querySelector('div#fff')// use # quando for id e . quando for classe
+       opa.style.background = 'darkblue'// Muda a cor do fundo do div para azul escuro
+       opa.style.color = 'white'//Muda a cor da letra de div para branco
+
+    </script>
+</body>
+</html>

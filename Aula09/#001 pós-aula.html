@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            color: rgb(0, 0, 0);
+            font: italic 56pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando no DOM</h1>
+    <p>testando o programa</p>
+    <p>aprendendo a usa o <strong>DOM</strong> em Java script</p>
+    <div>Clique em mim</div>
+    <script>
+        window.alert('Primeiros testes com tudo que aprendi!')
+        window.confirm('Estou tentando,OK?')
+        var nome = window.prompt('Vamos a primeira. Qual seu nome ?')
+        var n1 = window.prompt(`Ok ${nome}, vamos começar. Me diga em que ano você nasceu:`)
+        var n2 = window.prompt(`Em que ano estamos?`)
+        var idade = n2 - n1
+        document.write(`<br?>Obrigado, ${nome}! É um prazer te conhecer. você tem ${idade} anos de idade, Não é?<br/>Seu nome tem ${nome.length} letras, sendo que em maiúsculo ele fica ${nome.toUpperCase()}, e em minúsculo ele fica ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>
